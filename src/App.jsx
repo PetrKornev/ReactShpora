@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/" element={<Content />} />
+        <Route path="/:topic" element={<Content />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
