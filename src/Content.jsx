@@ -26,6 +26,18 @@ const Test = () => {
             </pre>
           );
         }
+        case 's': {
+          return (
+            <ul>
+              {text.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          );
+        }
+        case 'h': {
+          return <h3>{text}</h3>;
+        }
       }
     });
   };
