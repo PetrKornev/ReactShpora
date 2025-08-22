@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router';
 import { topics } from './Topics';
+import { Button } from 'antd';
 
 const NavigationTools = () => {
   const nameOfTopic = useParams();
@@ -24,13 +25,17 @@ const NavigationTools = () => {
   return (
     <>
       {prevTopic && (
-        <button onClick={onPrevTopic}>
+        <Button color="default" variant="solid" onClick={onPrevTopic}>
           Предыдущая тема: {prevTopic.title}
-        </button>
+        </Button>
       )}
-      <button onClick={onHomePage}>Домой</button>
+      <Button color="default" variant="solid" onClick={onHomePage}>
+        Домой
+      </Button>
       {nextTopic && (
-        <button onClick={onNextTopic}>Следующая тема: {nextTopic.title}</button>
+        <Button color="default" variant="solid" onClick={onNextTopic}>
+          Следующая тема: {nextTopic.title}
+        </Button>
       )}
     </>
   );

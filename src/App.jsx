@@ -1,17 +1,14 @@
 import './App.css';
-import { Route, Routes } from 'react-router';
-import MainPage from './MainPage';
-import ErrorPage from './ErrorPage';
-import Content from './Content';
+import ThemeProvider from './ThemeContext';
+
+import Maket from './Maket';
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/:topic" element={<Content />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <ThemeProvider>
+        <Maket />
+      </ThemeProvider>
     </>
   );
 }
