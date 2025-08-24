@@ -1,7 +1,7 @@
 import './App.css';
-import ThemeProvider from './ThemeContext';
+import ThemeProvider from '../Context/ThemeContext';
 
-import Maket from './Maket';
+import Maket from '../Maket';
 
 function App() {
   return (

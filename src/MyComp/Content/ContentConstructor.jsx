@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
-import { topics } from './Topics';
+import { topics } from '../../Utils/Topics';
 import NavigationTools from './NavigationTools';
 import { useParams } from 'react-router';
 
-const Test = () => {
+const ContentConstructor = () => {
   const nameOfTopic = useParams();
   const findTopic = topics.find((item) => item.path == nameOfTopic.topic);
 
@@ -38,6 +38,9 @@ const Test = () => {
         case 'h': {
           return <h3>{text}</h3>;
         }
+        default: {
+          return JSON.stringify(text);
+        }
       }
     });
   };
@@ -52,4 +55,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default ContentConstructor;

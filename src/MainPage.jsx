@@ -1,4 +1,4 @@
-import { topics } from './Topics';
+import { topics } from './Utils/Topics';
 import { Link } from 'react-router';
 
 const MainPage = () => {

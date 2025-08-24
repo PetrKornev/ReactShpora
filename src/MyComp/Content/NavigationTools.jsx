@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router';
-import { topics } from './Topics';
+import { topics } from '../../Utils/Topics';
 import { Button } from 'antd';
 
 const NavigationTools = () => {
